@@ -6,7 +6,9 @@
 </template>
 
 <script>
+import { ref } from 'vue';
 import PostList from '@/components/PostList';
+
 export default {
   name: 'Home',
   components: {
