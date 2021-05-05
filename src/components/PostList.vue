@@ -15,7 +15,6 @@ export default {
     SinglePost
   },
   setup(props) {
-
   }
 }
 </script>
