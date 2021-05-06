@@ -19,7 +19,7 @@ export default {
     PostList
   },
   setup() {
-    const {posts, error, load } = getPosts();
+    const { posts, error, load } = getPosts();
 
     load();
 

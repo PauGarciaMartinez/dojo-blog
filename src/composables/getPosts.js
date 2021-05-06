@@ -4,7 +4,7 @@ const getPosts = () => {
   const posts = ref([]);
   const error = ref([]);
 
-  const load = () => {
+  const load = async () => {
     try {
       let data = await fetch("http://localhost:3000/posts");
       
