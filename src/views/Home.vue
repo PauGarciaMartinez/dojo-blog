@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import { ref } from 'vue';
 import PostList from '@/components/PostList';
+import getPosts from '@/composables/getPosts';
 
 export default {
   name: 'Home',
@@ -19,24 +19,7 @@ export default {
     PostList
   },
   setup() {
-    const posts = ref([]);
-    const error = ref([]);
-
-    const load = async () => {
-      try {
-        let data = await fetch("http://localhost:3000/posts");
-        
-        if (!data.ok) {
-          throw new Error('No data available');
-        }
-
-        posts.value = await data.json();
-
-      } catch(e) {
-        error.value = e.message;
-        console.log(error.value);
-      }
-    }
+    const {posts, error, load } = getPosts();
 
     load();
 
