@@ -1,5 +1,5 @@
 <template>
-  <div class="post">
+  <div class="post snippet">
     <router-link :to="{ name: 'Details', params: { id: post.id }}">
       <h3>{{ post.title }}</h3>
     </router-link>
@@ -30,7 +30,7 @@ export default {
   border-bottom: 1px dashed #e7e7e7;
   position: relative;
 }
-.post::before {
+.snippet::before {
   content: '';
   width: 100%;
   height: 60%;

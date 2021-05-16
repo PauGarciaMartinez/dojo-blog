@@ -36,4 +36,13 @@ header a.router-link-active {
   color: #444;
   font-weight: bold;
 }
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
 </style>
