@@ -46,4 +46,13 @@ export default {
   grid-template-columns: 3fr 1fr;
   gap: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+}
 </style>
