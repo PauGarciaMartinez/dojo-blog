@@ -42,7 +42,7 @@ export default {
   display: block;
   width: 100%;
   height: 100%;
-  background: #ff8800;
+  background: #ae00ff;
   position: absolute;
   z-index: -1;
   padding-right: 40px;

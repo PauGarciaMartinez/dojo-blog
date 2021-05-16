@@ -92,7 +92,7 @@ label::before {
   display: block;
   width: 100%;
   height: 100%;
-  background: #ff8800;
+  background: #ae00ff;
   position: absolute;
   z-index: -1;
   padding-right: 40px;
@@ -102,7 +102,7 @@ label::before {
 button {
   display: block;
   margin-top: 30px;
-  background: #ff8800;
+  background: #ae00ff;
   color: white;
   border: none;
   padding: 8px 16px;
