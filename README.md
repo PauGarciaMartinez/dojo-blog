@@ -1,4 +1,4 @@
-# dojo-blog
+# my-dev-blog
 
 ## Project setup
 ```
