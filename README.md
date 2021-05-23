@@ -1,19 +1,7 @@
 # my-dev-blog
 
-## Project setup
-```
-npm install
-```
+## About language and framework
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+For this project, I've used JavaScript (ES6+) and Vue 3. I've also used Vue Router.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This app consists in a blog with a homepage that lists every post. By clicking them, you can access all post details. You can filter by tag, and create new posts, too.
