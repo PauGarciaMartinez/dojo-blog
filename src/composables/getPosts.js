@@ -1,6 +1,5 @@
 import { ref } from 'vue';
 import { projectFirestore } from '@/firebase/config';
-import { timestamp } from '../firebase/config';
 
 const getPosts = () => {
   const posts = ref([]);
