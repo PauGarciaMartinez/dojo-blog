@@ -1,5 +1,6 @@
 import { ref } from 'vue';
 import { projectFirestore } from '@/firebase/config';
+import { timestamp } from '../firebase/config';
 
 const getPosts = () => {
   const posts = ref([]);
@@ -7,7 +8,7 @@ const getPosts = () => {
 
   const load = async () => {
     try {
-      const res = await projectFirestore.collection('posts').get();
+      const res = await projectFirestore.collection('posts').orderBy('created', 'desc').get();
 
       posts.value = res.docs.map(doc => {
         return { ...doc.data(), id: doc.id }
